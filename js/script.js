@@ -1,7 +1,7 @@
 /******************************************
 *****************************************/
 
-var lastIndex = 0;
+var lastIndex = 0; // Used to ensure that random number generated isn't the same as the last one
 
 class Quote {
     constructor(quote, source) {
@@ -109,4 +109,5 @@ function printQuote() {
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote);
-printQuote(); // Selects random quote on load
+
+printQuote(); // Displays random quote on page load
